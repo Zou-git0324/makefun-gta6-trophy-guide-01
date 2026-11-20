@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI Trophy Guide &amp; Tracker — All 55 Trophies</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div>
+    <h1>GTA VI Trophy Guide &amp; Tracker</h1>
+    <p class="sub">All 55 trophies (1 platinum, 2 gold, 6 silver, 46 bronze). Every trophy is offline, single-player, and earnable in one playthrough. Platinum estimate: about 200 hours, difficulty 4/10 (PowerPyx).</p>
+  </div>
+  <div class="progress-box">
+    <p id="progress">0 of 55 earned</p>
+    <div class="bar"><div id="barfill"></div></div>
+    <p id="pct">0%</p>
+  </div>
+</header>
+
+<section id="roadmap">
+  <h2>Roadmap to the platinum <button id="roadmap-toggle" type="button">Hide</button></h2>
+  <ol id="roadmap-steps"></ol>
+  <p class="missable-note">⚠️ One trophy may be missable: <strong>Positive Mental Attitude</strong> (meditate at every spot). PowerPyx and GTABase flag it because the first meditation spot can only be used early in the story, in Chapter 1. Meditate at every spot you find from Chapter 1 on.</p>
+</section>
+
+<div class="controls">
+  <label>Search <input id="search" type="search" placeholder="trophy name or guide text"></label>
+  <label>Grade <select id="grade"><option value="all">All grades</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select></label>
+  <label>Kind <select id="kind"><option value="all">All kinds</option><option value="story">Story</option><option value="activity">Activity</option><option value="stranger">Strangers</option><option value="collectible">Collectibles</option><option value="crime">Crime</option><option value="exploration">Exploration</option><option value="completion">Completion</option><option value="misc">Misc</option></select></label>
+  <label>Status <select id="status"><option value="all">All</option><option value="earned">Earned</option><option value="remaining">Still to earn</option></select></label>
+  <label class="check"><input id="spoilers" type="checkbox" checked> Hide story spoilers until earned</label>
+  <label class="check"><input id="missable-only" type="checkbox"> Missable only</label>
+  <button id="export" type="button">Export progress</button>
+  <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
+  <button id="reset" type="button">Reset</button>
+</div>
+<p id="count"></p>
+
+<table>
+  <thead><tr><th>Earned</th><th>Trophy</th><th>Grade</th><th>Kind</th><th>How to get it</th></tr></thead>
+  <tbody id="rows"></tbody>
+</table>
+
+<section id="sources">
+  <h2>Sources</h2>
+  <p>Trophy names, descriptions and grades are the official list as published on PSN (18 November 2026). Guides are written in our own words from those descriptions and the sources below; no guide text is copied. Where a method is still unconfirmed, the guide says so instead of guessing.</p>
+  <ul id="source-list"></ul>
+</section>
+<p class="foot">GTA VI Trophy Guide &amp; Tracker — a free, open-source, offline guide. Works from its own files, no network needed. Not affiliated with Rockstar Games.</p>
+<script type="module" src="app.js"></script>
+</body>
+</html>

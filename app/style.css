@@ -1,0 +1,39 @@
+body { font-family: Arial, Helvetica, sans-serif; margin: 24px; color: #1c1c1c; background: #faf7f0; line-height: 1.45; }
+header { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; flex-wrap: wrap; }
+h1 { margin: 0 0 4px; font-size: 28px; }
+.sub { margin: 0; max-width: 640px; color: #444; }
+.progress-box { min-width: 220px; text-align: right; }
+.progress-box p { margin: 2px 0; }
+.bar { height: 12px; background: #e0d9c8; border-radius: 6px; overflow: hidden; }
+#barfill { height: 100%; width: 0; background: #c98a2b; }
+#roadmap { background: #fff; border: 1px solid #ddd3bd; border-radius: 8px; padding: 12px 18px; margin: 16px 0; }
+#roadmap h2 { margin: 4px 0 8px; font-size: 20px; }
+#roadmap li { margin-bottom: 8px; }
+.missable-note { background: #fff3cd; border-left: 4px solid #c98a2b; padding: 8px 12px; }
+.controls { display: flex; gap: 14px; margin: 12px 0; align-items: center; flex-wrap: wrap; background: #fff; border: 1px solid #ddd3bd; border-radius: 8px; padding: 10px 14px; }
+.controls label { font-size: 14px; }
+.controls input[type="search"] { padding: 4px 6px; }
+.controls select { padding: 4px; }
+.check { white-space: nowrap; }
+.import input { font-size: 12px; }
+button { padding: 5px 10px; cursor: pointer; }
+#count { color: #555; margin: 4px 0 10px; }
+table { border-collapse: collapse; width: 100%; background: #fff; }
+th, td { border-bottom: 1px solid #ddd; padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: #f2ead8; }
+tr.earned td { color: #777; }
+tr.earned td:first-child { color: #1c1c1c; }
+tr.missable { background: #fff8e6; }
+.grade-platinum { color: #7a5fd0; font-weight: bold; }
+.grade-gold { color: #a67c00; font-weight: bold; }
+.grade-silver { color: #5a6b7a; font-weight: bold; }
+.grade-bronze { color: #8a5a2b; font-weight: bold; }
+.hidden-trophy { color: #888; font-style: italic; }
+.flag { color: #9a6200; font-weight: bold; font-size: 13px; }
+details summary { cursor: pointer; font-weight: bold; }
+details p { margin: 6px 0; }
+.src { color: #555; font-size: 13px; }
+#sources { margin-top: 24px; }
+#sources li { margin-bottom: 6px; }
+.foot { color: #777; font-size: 13px; margin-top: 20px; }
+@media (max-width: 700px) { body { margin: 12px; } .progress-box { text-align: left; } }
